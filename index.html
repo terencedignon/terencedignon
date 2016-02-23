@@ -80,17 +80,26 @@
 
 	#adarkroom {
 		background-image: url(ishmail.png);
-		background-size: cover;
+		background-size: 300px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position: right 100 bottom: 0;
 	}
 
 	#gridland {
 		background-image: url(toadroad.png);
-		background-size: cover;
+		background-size: 700px;
+		background-repeat: no-repeat;
+		background-position: center;
+		/*background-position: left 0px;*/
 	}
 	#radum {
 		background-image: url(pending.png);
-		background-size: cover;
-		background-position: left 20px bottom 35px;
+		/*background-size: contain;*/
+		background-size: 300px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position: right 100 bottom: 0;
 	}
 
 	.gameListing:before {
@@ -254,6 +263,16 @@
 		display: inline;
 		text-align: left;
 	}
+
+	footer {
+		display: none;
+		padding-top: 20px;
+		border-top: 1px solid #eee;
+		font-size: 16px;
+		color: #777;
+		text-align: center;
+	}
+
 	</style>
 </head>
 <body>
@@ -306,6 +325,10 @@ I'm interested in building rich web apps using Javascript and Rails. My favorite
 		</a>
 		<div style="clear:both"></div>
 	</section>
+	<footer>
+		LinkedIn GitHub Email
+	</footer>
+
 
 	<!-- <section id="social" >
 		<a title="Facebook" href="https://www.facebook.com/doublespeakgames"><img src="http://www.doublespeakgames.com/images/fb.svg" alt="Facebook" /></a>

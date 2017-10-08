@@ -11,6 +11,11 @@
 
 	body {
 		font-size: 1em;
+		background: #fffffb
+	}
+
+	.more-info {
+		margin-right: 10px
 	}
 
 	section {
@@ -78,72 +83,6 @@
 		background-size: 100%;
 	}
 
-	#ishmail {
-		background-image: url(ishmail.png);
-		background-size: 300px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-position: right 100 bottom: 0;
-	}
-
-	#toadRoad {
-		background-image: url(toadroad.png);
-		background-size: 700px;
-		background-repeat: no-repeat;
-		background-position: center;
-		/*background-position: left 0px;*/
-		/*display: block;*/
-	}
-	#pending {
-		background-image: url(pending.png);
-		/*background-size: contain;*/
-		background-size: 300px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-position: right 100 bottom: 0;
-		/*width: 50%;*/
-	}
-
-	.projectListing:before {
-		display: block;
-		content: ' ';
-		padding-top: 100%;
-	}
-
-	.projectListing:after {
-		content: ' ';
-		display: block;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		bottom: 0px;
-		right: 0px;
-		/*box-shadow: 10px 10px 0 0 #000;*/
-		border: 2px solid #eee;
-	}
-
-	.projectListing h3 {
-		margin: 0 0 5px 0;
-	}
-
-	.projectDetails {
-		position: absolute;
-		/*width: 45%;*/
-		bottom: 0px;
-		padding: 15px;
-		background-color: #fff;
-		box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		-o-box-sizing: border-box;
-		width: 100%;
-		color: black;
-		/*border-top: 2px solid #eee;*/
-		font-size: 0.5em;
-		text-align: left;
-	}
-
 	#social {
 		margin-top: 20px;
 		text-align: right;
@@ -190,10 +129,6 @@
 		}
 		#small-banner {
 			display: none;
-		}
-
-		.avatar {
-			border-radius: 25%;
 		}
 
 		.projectListing {
@@ -282,65 +217,23 @@
 </head>
 <body>
 	<header>
-		<!-- <div class="" -->
-		<!-- <div class="header-holder"> -->
-	<div class="text">
-		<img  src="terence.jpg" class="avatar" style="height: auto; width: 300px;"><br/>
-		<h1>Terence Dignon</h1><br>
-		<span class="subheader">
-	(developer)
-</span>
-	<br/>
-	<a href="http://github.com/terencedignon"><i class="fa fa-github-square"></i></a>
-	<a href="http://linkedin.com/in/terencedignon"><i class="fa fa-linkedin"></i></a>
-						<a href="mailto:terry.p.dignon@gmail.com"><i class="fa fa-envelope"></i></a>
-						<a href="./TerenceDignonResume.pdf">
-							<i class="fa fa-file-o"></i></a>
-
-</div>
-</div>
-</header>
-	<section id="about">
-		<h2>- ABOUT -</h2>
-		Hi, I'm a web developer who works in Ruby, Javascript, HTML, and CSS, and RESTful APIs.
-<p>
-I'm interested in building rich web apps using Javascript and Rails. My favorite projects are those that parse and organize large data sets.
-
-	</section>
-	<section id="projects">
-		<h2>- PROJECTS -</h2>
-		<a
-		 id='pending' href="http://pending.nyc" class="projectListing" title="Pending">
-			<div class="projectDetails">
-				<h3>Grade Pending</h3>
-        Restaurant inspection app inspired by and built on the NY Open Data Project.
-			</div>
-		</a><a id='ishmail' href="http://ishmail.co" class="projectListing" title="Ishmail">
-					<div class="projectDetails">
-						<h3>Ishmail</h3>
-						Fully functional email client built with Rails and React JS
-					</div>
-		</a>
-		<a
-		id='toadRoad' href="http://terencedignon.github.io/toadroad" class="projectListing" title="Toad Road">
-			<div class="projectDetails">
-				<h3>Toad Road</h3>
-				Websocket Frogger
-			</div>
-		</a>
-		<div style="clear:both"></div>
-	</section>
-
-
+		<div class="text">
+			<img  src="images/terence.jpg" class="avatar" style="height: auto; width: 300px;"><p></p>
+			<h2>Terence Dignon</h2><br>
+			<br/>
+			<a href="http://github.com/terencedignon" class='more-info' target='_blank'><img src='images/github.svg'></a>
+			<a href="http://linkedin.com/in/terencedignon" class='more-info' target='_blank'><img src='images/link.svg'></a>
+			<a href="mailto:terry.p.dignon@gmail.com" class='more-info' target='_blank'><img src='images/mail.svg'></a>
+			<a href="./terence_dignon_resume.pdf" class='more-info' target='_blank'><img src='images/file.svg'></a>
+		</div>
+	</header>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 	  ga('create', 'UA-74179482-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 
 </body>
